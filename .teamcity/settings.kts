@@ -44,7 +44,7 @@ object Build : BuildType({
     steps {
         dotnetDevenv {
             projects = "ConsoleApplication2.sln"
-            version = DevenvBuildStep.VSVersion.V16
+            version = DevenvBuildStep.VSVersion.V10
             action = DevenvBuildStep.VSAction.Build
             param("dotNetCoverage.dotCover.home.path", "%teamcity.tool.JetBrains.dotCover.CommandLineTools.DEFAULT%")
         }
