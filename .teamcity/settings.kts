@@ -50,7 +50,7 @@ object Build : BuildType({
         }
         dotnetMsBuild {
             projects = "ConsoleApplication2.sln"
-            version = DotnetMsBuildStep.MSBuildVersion.V16
+            version = DotnetMsBuildStep.MSBuildVersion.V4
             args = "-noLogo"
             param("dotNetCoverage.dotCover.home.path", "%teamcity.tool.JetBrains.dotCover.CommandLineTools.DEFAULT%")
         }
